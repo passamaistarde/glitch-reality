@@ -220,11 +220,48 @@ body::before {
   margin: 0 0 1.15rem;
 }
 
-.reader-content hr {
+.reader-content hr,
+.reader-content hr.chapter-divider {
   border: 0;
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(108, 92, 231, 0.4), transparent);
   margin: 28px 0;
+}
+
+/* System message styling */
+.reader-content p.system-message {
+  font-family: 'Chakra Petch', monospace;
+  color: #f0c040;
+  background: rgba(240, 192, 64, 0.07);
+  border-left: 3px solid rgba(240, 192, 64, 0.5);
+  padding: 6px 14px;
+  margin: 10px 0;
+  font-size: 0.92rem;
+  letter-spacing: 0.02em;
+}
+
+/* Status box */
+.reader-content .status-box {
+  font-family: 'Chakra Petch', monospace;
+  color: #f0c040;
+  background: rgba(240, 192, 64, 0.06);
+  border: 1px solid rgba(240, 192, 64, 0.3);
+  border-radius: 6px;
+  padding: 14px 18px;
+  margin: 18px 0;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.reader-content .status-box p {
+  margin: 0;
+}
+
+.reader-content .status-box .status-title {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
 }
 
 .welcome-text {
