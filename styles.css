@@ -1,14 +1,17 @@
 :root {
-  --bg: #f4efe7;
-  --bg-panel: rgba(255, 252, 246, 0.88);
-  --ink: #1f1d1a;
-  --muted: #665f56;
-  --line: rgba(53, 48, 42, 0.14);
-  --accent: #0f7c73;
-  --accent-strong: #0a5d58;
-  --accent-soft: rgba(15, 124, 115, 0.12);
-  --signal: #b84f1c;
-  --shadow: 0 28px 70px rgba(31, 29, 26, 0.12);
+  --bg: #0a0a1a;
+  --bg-panel: rgba(12, 12, 35, 0.92);
+  --ink: #e8e6f0;
+  --muted: #8a86a0;
+  --line: rgba(130, 120, 200, 0.18);
+  --accent: #6c5ce7;
+  --accent-strong: #a29bfe;
+  --accent-soft: rgba(108, 92, 231, 0.15);
+  --gold: #f0c040;
+  --gold-soft: rgba(240, 192, 64, 0.12);
+  --signal: #f0c040;
+  --danger: #e74c4c;
+  --shadow: 0 28px 70px rgba(0, 0, 0, 0.45);
 }
 
 * {
@@ -23,11 +26,11 @@ body {
   margin: 0;
   min-height: 100vh;
   color: var(--ink);
-  font-family: "Noto Serif Thai", serif;
+  font-family: "Noto Sans Thai", sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(15, 124, 115, 0.16), transparent 32%),
-    radial-gradient(circle at top right, rgba(184, 79, 28, 0.16), transparent 26%),
-    linear-gradient(180deg, #fcf8f0 0%, var(--bg) 48%, #efe6d9 100%);
+    radial-gradient(circle at top left, rgba(108, 92, 231, 0.2), transparent 32%),
+    radial-gradient(circle at top right, rgba(240, 192, 64, 0.12), transparent 26%),
+    linear-gradient(180deg, #0d0d24 0%, var(--bg) 48%, #080818 100%);
 }
 
 body::before {
@@ -36,11 +39,11 @@ body::before {
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.18) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.18) 1px, transparent 1px);
+    linear-gradient(rgba(108, 92, 231, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(108, 92, 231, 0.06) 1px, transparent 1px);
   background-size: 28px 28px;
   mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.55), transparent 85%);
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .page-shell {
@@ -67,6 +70,14 @@ body::before {
   border: 1px solid var(--line);
   border-radius: 26px;
   box-shadow: var(--shadow);
+}
+
+.hero-subtitle {
+  margin: 8px 0 0;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  color: var(--gold);
+  font-weight: 600;
 }
 
 .hero-copy {
@@ -112,7 +123,7 @@ body::before {
   justify-content: space-between;
   padding: 28px;
   background:
-    linear-gradient(180deg, rgba(15, 124, 115, 0.08), rgba(255, 252, 246, 0.88)),
+    linear-gradient(180deg, rgba(108, 92, 231, 0.12), var(--bg-panel)),
     var(--bg-panel);
 }
 
@@ -146,7 +157,7 @@ body::before {
   width: 100%;
   border: 1px solid var(--line);
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.58);
+  background: rgba(20, 18, 50, 0.6);
   padding: 16px;
   text-align: left;
   color: var(--ink);
@@ -157,14 +168,14 @@ body::before {
 .chapter-button:hover,
 .chapter-button:focus-visible {
   transform: translateY(-2px);
-  border-color: rgba(15, 124, 115, 0.4);
-  background: rgba(15, 124, 115, 0.08);
+  border-color: rgba(108, 92, 231, 0.5);
+  background: rgba(108, 92, 231, 0.12);
   outline: none;
 }
 
 .chapter-button.active {
-  background: linear-gradient(135deg, rgba(15, 124, 115, 0.14), rgba(184, 79, 28, 0.08));
-  border-color: rgba(15, 124, 115, 0.46);
+  background: linear-gradient(135deg, rgba(108, 92, 231, 0.2), rgba(240, 192, 64, 0.1));
+  border-color: rgba(108, 92, 231, 0.55);
 }
 
 .chapter-button-title {
@@ -212,8 +223,15 @@ body::before {
 .reader-content hr {
   border: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(53, 48, 42, 0.28), transparent);
+  background: linear-gradient(90deg, transparent, rgba(108, 92, 231, 0.4), transparent);
   margin: 28px 0;
+}
+
+.welcome-text {
+  color: var(--muted);
+  text-align: center;
+  padding: 40px 0;
+  font-size: 1.1rem;
 }
 
 .reader-nav {
@@ -237,8 +255,8 @@ body::before {
 }
 
 .primary-button {
-  background: var(--accent);
-  color: #f7fffd;
+  background: linear-gradient(135deg, var(--accent), #8b5cf6);
+  color: #f0eeff;
 }
 
 .ghost-button {

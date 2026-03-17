@@ -3,27 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glitch Reality Archive</title>
-  <meta name="description" content="เว็บอ่านนิยาย Glitch Reality พร้อมหน้าอ่านบนมือถือและเดสก์ท็อป">
+  <title>GATE BREAK — เทพเดี่ยวจากแร้งค์สุดท้าย</title>
+  <meta name="description" content="เว็บอ่านนิยายแฟนตาซี GATE BREAK — เทพเดี่ยวจากแร้งค์สุดท้าย อ่านฟรีบนมือถือและเดสก์ท็อป">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Noto+Serif+Thai:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="page-shell">
     <header class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">Urban Fantasy / Cyber-Occult</p>
-        <h1>Glitch Reality</h1>
+        <p class="eyebrow">Fantasy / Dungeon / Solo Leveling</p>
+        <h1>GATE BREAK</h1>
+        <p class="hero-subtitle">เทพเดี่ยวจากแร้งค์สุดท้าย</p>
         <p class="hero-text">
-          หน้าอ่านนิยายฉบับเว็บสำหรับตามเรื่องของคุริโตะในโลกที่ความจริงกำลังพังเหมือนระบบเสีย
-          ออกแบบให้อ่านสบายทั้งบนมือถือและหน้าจอใหญ่ โดยแยก story bible ออกจากหน้าสาธารณะ
+          โลกที่ประตูมิติเปิดออก มอนสเตอร์บุกโจมตี และนักล่าคือแนวป้องกันสุดท้าย
+          ฮายาเสะ เซ็น — นักล่าแร้งค์ Z ผู้ไร้ค่าที่สุดในสายตาทุกคน
+          กำลังจะพิสูจน์ว่าแร้งค์ไม่ได้กำหนดชะตากรรม
         </p>
       </div>
       <div class="hero-card">
-        <p class="hero-card-label">Reading Mode</p>
-        <p class="hero-card-title" id="active-chapter-label">กำลังโหลดบท...</p>
+        <p class="hero-card-label">อ่านล่าสุด</p>
+        <p class="hero-card-title" id="active-chapter-label">ยังไม่มีตอน</p>
         <button id="scroll-to-reader" class="primary-button" type="button">เริ่มอ่าน</button>
       </div>
     </header>
@@ -31,24 +33,26 @@
     <main class="layout">
       <aside class="chapter-list-panel">
         <div class="panel-header">
-          <p class="panel-label">Library</p>
-          <h2>สารบัญตอน</h2>
+          <p class="panel-label">สารบัญ</p>
+          <h2>รายชื่อตอน</h2>
         </div>
         <div id="chapter-list" class="chapter-list"></div>
       </aside>
 
       <section class="reader-panel" id="reader-panel">
         <div class="reader-meta">
-          <p class="panel-label">Now Reading</p>
-          <h2 id="reader-title">กำลังโหลด...</h2>
-          <p id="reader-subtitle" class="reader-subtitle">ระบบกำลังดึงข้อมูลบทนิยาย</p>
+          <p class="panel-label">กำลังอ่าน</p>
+          <h2 id="reader-title">ยินดีต้อนรับ</h2>
+          <p id="reader-subtitle" class="reader-subtitle">เลือกตอนจากสารบัญเพื่อเริ่มอ่าน</p>
         </div>
 
-        <article id="reader-content" class="reader-content" aria-live="polite"></article>
+        <article id="reader-content" class="reader-content" aria-live="polite">
+          <p class="welcome-text">เลือกตอนที่ต้องการจากสารบัญด้านซ้าย เพื่อเริ่มต้นการผจญภัยไปกับ ฮายาเสะ เซ็น</p>
+        </article>
 
         <nav class="reader-nav">
-          <button id="prev-button" class="ghost-button" type="button">บทก่อนหน้า</button>
-          <button id="next-button" class="primary-button" type="button">บทถัดไป</button>
+          <button id="prev-button" class="ghost-button" type="button" disabled>ตอนก่อนหน้า</button>
+          <button id="next-button" class="primary-button" type="button" disabled>ตอนถัดไป</button>
         </nav>
       </section>
     </main>

@@ -1,153 +1,99 @@
-const chapters = [
-  {
-    id: "chapter-001",
-    title: "บทที่ 1: ดีบักเกอร์ผู้ไร้ค่า",
-    subtitle: "The Null Debugger",
-    file: "chapters/chapter_001.md",
-  },
-  {
-    id: "chapter-002",
-    title: "บทที่ 2: กับดักในเขต D-13",
-    subtitle: "The Trap in D-13",
-    file: "chapters/chapter_002.md",
-  },
-];
+/* ── GATE BREAK Chapter Loader ── */
+(function () {
+  "use strict";
 
-const chapterList = document.querySelector("#chapter-list");
-const readerTitle = document.querySelector("#reader-title");
-const readerSubtitle = document.querySelector("#reader-subtitle");
-const readerContent = document.querySelector("#reader-content");
-const activeChapterLabel = document.querySelector("#active-chapter-label");
-const prevButton = document.querySelector("#prev-button");
-const nextButton = document.querySelector("#next-button");
-const scrollToReaderButton = document.querySelector("#scroll-to-reader");
-const readerPanel = document.querySelector("#reader-panel");
+  const CHAPTER_DIR = "chapters/";
+  const MANIFEST = [
+    { file: "chapter-01.html", title: "ตอนที่ 1: วันที่โลกเปลี่ยนไป", subtitle: "ยี่สิบสี่ปีก่อน โลกใบนี้ยังเป็นโลกธรรมดา..." }
+  ];
 
-let activeIndex = 0;
+  const $ = (sel) => document.querySelector(sel);
+  const chapterListEl = $("#chapter-list");
+  const readerTitle = $("#reader-title");
+  const readerSubtitle = $("#reader-subtitle");
+  const readerContent = $("#reader-content");
+  const activeLabel = $("#active-chapter-label");
+  const prevBtn = $("#prev-button");
+  const nextBtn = $("#next-button");
+  const scrollBtn = $("#scroll-to-reader");
 
-function markdownToHtml(markdown) {
-  return markdown
-    .split(/\r?\n\r?\n/)
-    .map((block) => block.trim())
-    .filter(Boolean)
-    .map((block) => {
-      if (block === "---") {
-        return "<hr>";
-      }
+  let currentIndex = -1;
 
-      if (block.startsWith("# ")) {
-        return `<h1>${escapeHtml(block.slice(2))}</h1>`;
-      }
+  function init() {
+    if (MANIFEST.length === 0) {
+      chapterListEl.innerHTML =
+        '<p style="color:var(--muted);padding:8px 0;">ยังไม่มีตอน — กำลังจะมาเร็ว ๆ นี้</p>';
+      activeLabel.textContent = "ยังไม่มีตอน";
+      updateNav();
+      return;
+    }
 
-      if (block.startsWith("## ")) {
-        return `<h2>${escapeHtml(block.slice(3))}</h2>`;
-      }
-
-      if (block.startsWith("### ")) {
-        return `<h3>${escapeHtml(block.slice(4))}</h3>`;
-      }
-
-      const inlineHtml = escapeHtml(block)
-        .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
-        .replace(/\*(.*?)\*/g, "<em>$1</em>")
-        .replace(/`([^`]+)`/g, "<code>$1</code>")
-        .replace(/\n/g, "<br>");
-
-      return `<p>${inlineHtml}</p>`;
-    })
-    .join("\n");
-}
-
-function escapeHtml(value) {
-  return value
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#39;");
-}
-
-function renderChapterList() {
-  chapterList.innerHTML = "";
-
-  chapters.forEach((chapter, index) => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "chapter-button";
-    button.dataset.index = String(index);
-    button.innerHTML = `
-      <span class="chapter-button-title">${chapter.title}</span>
-      <span class="chapter-button-meta">${chapter.subtitle}</span>
-    `;
-
-    button.addEventListener("click", () => {
-      void loadChapter(index, true);
+    MANIFEST.forEach(function (ch, i) {
+      var btn = document.createElement("button");
+      btn.className = "chapter-button";
+      btn.type = "button";
+      btn.innerHTML =
+        '<span class="chapter-button-title">' + escapeHtml(ch.title) + "</span>" +
+        '<span class="chapter-button-meta">' + escapeHtml(ch.subtitle || "") + "</span>";
+      btn.addEventListener("click", function () { loadChapter(i); });
+      chapterListEl.appendChild(btn);
     });
 
-    chapterList.append(button);
+    loadChapter(0);
+  }
+
+  function loadChapter(index) {
+    if (index < 0 || index >= MANIFEST.length) return;
+    var ch = MANIFEST[index];
+    currentIndex = index;
+
+    readerTitle.textContent = ch.title;
+    readerSubtitle.textContent = ch.subtitle || "";
+    activeLabel.textContent = ch.title;
+    readerContent.innerHTML = '<p style="color:var(--muted);">กำลังโหลด...</p>';
+
+    highlightButton(index);
+
+    fetch(CHAPTER_DIR + ch.file)
+      .then(function (r) {
+        if (!r.ok) throw new Error("ไม่พบไฟล์บท");
+        return r.text();
+      })
+      .then(function (html) {
+        readerContent.innerHTML = html;
+      })
+      .catch(function () {
+        readerContent.innerHTML =
+          '<p style="color:var(--danger);">ไม่สามารถโหลดบทนี้ได้</p>';
+      });
+
+    updateNav();
+  }
+
+  function highlightButton(index) {
+    var buttons = chapterListEl.querySelectorAll(".chapter-button");
+    buttons.forEach(function (b, i) {
+      b.classList.toggle("active", i === index);
+    });
+  }
+
+  function updateNav() {
+    prevBtn.disabled = currentIndex <= 0;
+    nextBtn.disabled = currentIndex < 0 || currentIndex >= MANIFEST.length - 1;
+  }
+
+  prevBtn.addEventListener("click", function () { loadChapter(currentIndex - 1); });
+  nextBtn.addEventListener("click", function () { loadChapter(currentIndex + 1); });
+  scrollBtn.addEventListener("click", function () {
+    var panel = $("#reader-panel");
+    if (panel) panel.scrollIntoView({ behavior: "smooth" });
   });
-}
 
-function updateChapterListState() {
-  const buttons = chapterList.querySelectorAll(".chapter-button");
-  buttons.forEach((button, index) => {
-    button.classList.toggle("active", index === activeIndex);
-  });
-}
-
-function updateNavigation() {
-  prevButton.disabled = activeIndex === 0;
-  nextButton.disabled = activeIndex === chapters.length - 1;
-}
-
-async function loadChapter(index, shouldScroll = false) {
-  activeIndex = index;
-  const chapter = chapters[index];
-
-  updateChapterListState();
-  updateNavigation();
-
-  readerTitle.textContent = chapter.title;
-  readerSubtitle.textContent = chapter.subtitle;
-  activeChapterLabel.textContent = chapter.title;
-  readerContent.innerHTML = "<p>กำลังโหลดเนื้อหา...</p>";
-
-  const response = await fetch(chapter.file, { cache: "no-store" });
-  if (!response.ok) {
-    readerContent.innerHTML = "<p>ไม่สามารถโหลดบทนี้ได้</p>";
-    return;
+  function escapeHtml(str) {
+    var div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
   }
 
-  const markdown = await response.text();
-  readerContent.innerHTML = markdownToHtml(markdown);
-  localStorage.setItem("glitch-reality-active-chapter", chapter.id);
-
-  if (shouldScroll) {
-    readerPanel.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-}
-
-function restoreLastChapter() {
-  const savedId = localStorage.getItem("glitch-reality-active-chapter");
-  const savedIndex = chapters.findIndex((chapter) => chapter.id === savedId);
-  return savedIndex >= 0 ? savedIndex : 0;
-}
-
-prevButton.addEventListener("click", () => {
-  if (activeIndex > 0) {
-    void loadChapter(activeIndex - 1, true);
-  }
-});
-
-nextButton.addEventListener("click", () => {
-  if (activeIndex < chapters.length - 1) {
-    void loadChapter(activeIndex + 1, true);
-  }
-});
-
-scrollToReaderButton.addEventListener("click", () => {
-  readerPanel.scrollIntoView({ behavior: "smooth", block: "start" });
-});
-
-renderChapterList();
-void loadChapter(restoreLastChapter());
+  init();
+})();
