@@ -50,6 +50,7 @@
 - ชื่อไฟล์: `chapter-XX.html` (เช่น chapter-01.html)
 - ภายในเป็นเนื้อหา HTML ง่าย ๆ (h2 สำหรับหัวบท, p สำหรับย่อหน้า, hr สำหรับเส้นคั่น)
 - เพิ่มตอนใหม่ต้องอัปเดต MANIFEST ใน `app.js` ด้วย
+- **หลังเขียนตอนใหม่เสร็จ ต้อง git add, commit, push ขึ้น GitHub Pages ทันที** (repo: passamaistarde/glitch-reality, branch: master)
 
 ## 7. บันทึกตอนที่เขียนแล้ว
 
