@@ -7,6 +7,7 @@
     .\deploy.ps1 status          # Show chapter status
     .\deploy.ps1 new             # Deploy new chapters only
     .\deploy.ps1 update 2        # Update chapter 2
+    .\deploy.ps1 all             # Deploy all new + modified chapters
 #>
 
 param(
@@ -114,16 +115,18 @@ Write-Host ""
 
 # ─── Validate Action ───
 
-if ($Action -notin @("new", "update", "status")) {
+if ($Action -notin @("new", "update", "status", "all")) {
     Write-Host "  Usage:" -ForegroundColor White
     Write-Host ""
     Write-Host "    .\deploy.ps1 status          Show chapter status" -ForegroundColor Gray
     Write-Host "    .\deploy.ps1 new             Deploy new chapters" -ForegroundColor Gray
     Write-Host "    .\deploy.ps1 update <num>    Update specific chapter" -ForegroundColor Gray
+    Write-Host "    .\deploy.ps1 all             Deploy all new + modified" -ForegroundColor Gray
     Write-Host ""
     Write-Host "  Examples:" -ForegroundColor White
     Write-Host "    .\deploy.ps1 new             # push all new chapters" -ForegroundColor DarkGray
     Write-Host "    .\deploy.ps1 update 2        # push changes to ch.2" -ForegroundColor DarkGray
+    Write-Host "    .\deploy.ps1 all             # deploy everything at once" -ForegroundColor DarkGray
     Write-Host ""
     return
 }
@@ -244,6 +247,68 @@ switch ($Action) {
 
         Write-Host ""
         Write-Host "  [OK] Updated!" -ForegroundColor Green
+        Write-Host "  URL: https://passamaistarde.github.io/glitch-reality/" -ForegroundColor Cyan
+        Write-Host ""
+    }
+
+    "all" {
+        $local  = Get-LocalChapters
+        $remote = Get-RemoteChapterNames
+        $new    = @($local | Where-Object { $_.Name -notin $remote })
+        $mod    = @($local | Where-Object {
+            $_.Name -in $remote -and
+            [bool](git diff origin/master -- "chapters/$($_.Name)" 2>$null)
+        })
+
+        if ($new.Count -eq 0 -and $mod.Count -eq 0) {
+            Write-Host "  [i] Everything is up to date. Nothing to deploy." -ForegroundColor Yellow
+            Write-Host ""
+            return
+        }
+
+        if ($new.Count -gt 0) {
+            Write-Host "  [+] New chapters:" -ForegroundColor Green
+            foreach ($ch in $new) {
+                Write-Host "      $($ch.Name) — $(Get-ChapterTitle $ch.FullName)" -ForegroundColor Green
+            }
+        }
+
+        if ($mod.Count -gt 0) {
+            Write-Host "  [~] Modified chapters:" -ForegroundColor Yellow
+            foreach ($ch in $mod) {
+                $num = 0
+                if ($ch.Name -match 'chapter-(\d+)') { $num = [int]$Matches[1] }
+                Write-Host "      $($ch.Name) — $(Get-ChapterTitle $ch.FullName)" -ForegroundColor Yellow
+                Sync-Manifest -forceUpdate $num
+            }
+        }
+
+        Write-Host ""
+        Write-Host "  [*] Updating MANIFEST..." -ForegroundColor DarkGray
+        Sync-Manifest
+
+        Write-Host "  [*] Bumping cache version..." -ForegroundColor DarkGray
+        Step-CacheVersion
+
+        $allNames = @()
+        if ($new.Count -gt 0) { $allNames += ($new | ForEach-Object { $_.Name }) }
+        if ($mod.Count -gt 0) { $allNames += ($mod | ForEach-Object { $_.Name }) }
+        $summary = $allNames -join ", "
+
+        git add -A 2>$null
+        git commit -m "deploy all: $summary" 2>$null
+
+        Write-Host "  [*] Pushing..." -ForegroundColor DarkGray
+        git push origin master 2>$null
+
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "  [!] Push failed — check connection/credentials" -ForegroundColor Red
+            Write-Host ""
+            return
+        }
+
+        Write-Host ""
+        Write-Host "  [OK] Deployed $($new.Count) new + $($mod.Count) modified!" -ForegroundColor Green
         Write-Host "  URL: https://passamaistarde.github.io/glitch-reality/" -ForegroundColor Cyan
         Write-Host ""
     }

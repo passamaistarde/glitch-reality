@@ -6,7 +6,8 @@
   const MANIFEST = [
     { file: "chapter-01.html", title: "ตอนที่ 1: วันที่โลกเปลี่ยนไป", subtitle: "ยี่สิบสี่ปีก่อน — โลกใบนี้ยังเป็นโลกธรรมดา" },
     { file: "chapter-02.html", title: "ตอนที่ 2: ระบบตื่น", subtitle: "เสียงนั้นไม่เหมือนเสียงมนุษย์" },
-    { file: "chapter-03.html", title: "ตอนที่ 3: สามวัน", subtitle: "เซ็นเปิดตาครั้งที่สอง" }
+    { file: "chapter-03.html", title: "ตอนที่ 3: สามวัน", subtitle: "เซ็นเปิดตาครั้งที่สอง" },
+    { file: "chapter-04.html", title: "ตอนที่ 4: ดินแดนหมาป่า", subtitle: "เช้าวันรุ่งขึ้น เซ็นออกจากอพาร์ทเมนต์ตั้งแต่ฟ้ายังไม่สว่างดี" }
   ];
 
   const $ = (sel) => document.querySelector(sel);
