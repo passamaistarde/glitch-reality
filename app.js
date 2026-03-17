@@ -5,7 +5,8 @@
   const CHAPTER_DIR = "chapters/";
   const MANIFEST = [
     { file: "chapter-01.html", title: "ตอนที่ 1: วันที่โลกเปลี่ยนไป", subtitle: "ยี่สิบสี่ปีก่อน — โลกใบนี้ยังเป็นโลกธรรมดา" },
-    { file: "chapter-02.html", title: "ตอนที่ 2: ระบบตื่น", subtitle: "เสียงนั้นไม่เหมือนเสียงมนุษย์" }
+    { file: "chapter-02.html", title: "ตอนที่ 2: ระบบตื่น", subtitle: "เสียงนั้นไม่เหมือนเสียงมนุษย์" },
+    { file: "chapter-03.html", title: "ตอนที่ 3: สามวัน", subtitle: "สองสัปดาห์ หนึ่งเดือน — ตัวเลขเปลี่ยน ชีวิตเปลี่ยน" }
   ];
 
   const $ = (sel) => document.querySelector(sel);
