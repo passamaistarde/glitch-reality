@@ -9,8 +9,8 @@
     { file: "chapter-03.html", title: "ตอนที่ 3: สามวัน", subtitle: "เซ็นเปิดตาครั้งที่สอง" },
     { file: "chapter-04.html", title: "ตอนที่ 4: ดินแดนหมาป่า", subtitle: "เช้าวันรุ่งขึ้น เซ็นออกจากอพาร์ทเมนต์ตั้งแต่ฟ้ายังไม่สว่างดี" },
     { file: "chapter-05.html", title: "ตอนที่ 5: วันที่ประตูไม่มีเสียงเตือน", subtitle: "เช้าวันต่อมา เซ็นยืนอยู่หน้าอาคารสำนักงานใหญ่ JLA ชินจูกุ" },
-    { file: "chapter-06.html", title: "ตอนที่ 6: มิติเงามืด", subtitle: "เซ็นก้าวเข้าไปในความมืด" },
-    { file: "chapter-07.html", title: "ตอนที่ 7: ราคาของความอ่อนแอ", subtitle: "จักรพรรดิเงายืนรออยู่กลางสนามรบ" }
+    { file: "chapter-06.html", title: "ตอนที่ 6: มิติที่ไม่มีแสง", subtitle: "ความมืดกลืนทุกอย่าง" },
+    { file: "chapter-07.html", title: "ตอนที่ 7: ราคาของความอ่อนแอ", subtitle: "เซ็นวิ่ง" }
   ];
 
   const $ = (sel) => document.querySelector(sel);
