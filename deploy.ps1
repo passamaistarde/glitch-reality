@@ -86,7 +86,7 @@ function Sync-Manifest([int]$forceUpdate = 0) {
     $newAppJs = [regex]::Replace($appJs, '(?s)const MANIFEST = \[.*?\];', "const MANIFEST = [`n$block`n  ];")
 
     if ($newAppJs -eq $appJs) {
-        # Either pattern not found or no changes needed — both are fine for update
+        Write-Host "  [!] Warning: MANIFEST pattern not found in app.js" -ForegroundColor Red
         return
     }
 
