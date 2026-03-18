@@ -11,8 +11,9 @@
     { file: "chapter-05.html", title: "ตอนที่ 5: วันที่ประตูไม่มีเสียงเตือน", subtitle: "เช้าวันต่อมา เซ็นยืนอยู่หน้าอาคารสำนักงานใหญ่ JLA ชินจูกุ" },
     { file: "chapter-06.html", title: "ตอนที่ 6: มิติที่ไม่มีแสง", subtitle: "ความมืดกลืนทุกอย่าง" },
     { file: "chapter-07.html", title: "ตอนที่ 7: ราคาของความอ่อนแอ", subtitle: "เซ็นวิ่ง" },
-    { file: "chapter-08.html", title: "ตอนที่ 8: หมากตัวแรก", subtitle: "วันที่ 30 เช้า" },
-    { file: "chapter-09.html", title: "ตอนที่ 9: คนแปลกหน้าจากประตูมิติ", subtitle: "ร้านสะดวกซื้อ FamilyMart สาขาเซตากาย่า" }
+    { file: "chapter-08.html", title: "ตอนที่ 8: หมากตัวแรก", subtitle: "เซ็นตื่นขึ้นมาบนพื้นห้อง หลังยังพิงกำแพงเดิมจากเมื่อคืน ค..." },
+    { file: "chapter-09.html", title: "ตอนที่ 9: คนแปลกหน้าจากประตูมิติ", subtitle: "ร้านสะดวกซื้อ FamilyMart สาขาเซตากาย่า" },
+    { file: "chapter-10.html", title: "ตอนที่ 10: คำท้า", subtitle: "กำปั้นเรืองแสงหยุดนิ่งห่างจากจมูกเซ็นไม่ถึงสิบเซนติเมตร" }
   ];
 
   const $ = (sel) => document.querySelector(sel);
