@@ -15,7 +15,8 @@
     { file: "chapter-09.html", title: "ตอนที่ 9: คนแปลกหน้าจากประตูมิติ", subtitle: "ร้านสะดวกซื้อ FamilyMart สาขาเซตากาย่า" },
     { file: "chapter-10.html", title: "ตอนที่ 10: คำท้า", subtitle: "กำปั้นเรืองแสงหยุดนิ่งห่างจากจมูกเซ็นไม่ถึงสิบเซนติเมตร" },
     { file: "chapter-11.html", title: "ตอนที่ 11: เงาที่ไม่ได้เรียก", subtitle: "สนามต่อสู้อย่างเป็นทางการของ JLA อยู่ชั้นใต้ดิน B5 ของอาค..." },
-    { file: "chapter-12.html", title: "ตอนที่ 12: ก้าวเงา", subtitle: "เช้าวันถัดมา" }
+    { file: "chapter-12.html", title: "ตอนที่ 12: ก้าวเงา", subtitle: "เช้าวันถัดมา" },
+    { file: "chapter-13.html", title: "ตอนที่ 13: ค่าที่ไม่ควรมีอยู่จริง", subtitle: "เช้าวันสุดท้ายของเดือนกุมภาพันธ์" }
   ];
 
   const $ = (sel) => document.querySelector(sel);
