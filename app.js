@@ -16,7 +16,9 @@
     { file: "chapter-10.html", title: "ตอนที่ 10: คำท้า", subtitle: "กำปั้นเรืองแสงหยุดนิ่งห่างจากจมูกเซ็นไม่ถึงสิบเซนติเมตร" },
     { file: "chapter-11.html", title: "ตอนที่ 11: เงาที่ไม่ได้เรียก", subtitle: "สนามต่อสู้อย่างเป็นทางการของ JLA อยู่ชั้นใต้ดิน B5 ของอาค..." },
     { file: "chapter-12.html", title: "ตอนที่ 12: ก้าวเงา", subtitle: "เช้าวันถัดมา" },
-    { file: "chapter-13.html", title: "ตอนที่ 13: ค่าที่ไม่ควรมีอยู่จริง", subtitle: "เช้าวันสุดท้ายของเดือนกุมภาพันธ์" }
+    { file: "chapter-13.html", title: "ตอนที่ 13: ค่าที่ไม่ควรมีอยู่จริง", subtitle: "เช้าวันสุดท้ายของเดือนกุมภาพันธ์" },
+    { file: "chapter-14.html", title: "ตอนที่ 14: คนดังไม่ได้อยากดัง", subtitle: "บ่ายโมง สถานีชินจูกุ" },
+    { file: "chapter-15.html", title: "ตอนที่ 15: อัศวินแห่งเงา", subtitle: "สามวันถัดมา" }
   ];
 
   const $ = (sel) => document.querySelector(sel);
