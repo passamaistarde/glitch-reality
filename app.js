@@ -10,7 +10,9 @@
     { file: "chapter-04.html", title: "ตอนที่ 4: ดินแดนหมาป่า", subtitle: "เช้าวันรุ่งขึ้น เซ็นออกจากอพาร์ทเมนต์ตั้งแต่ฟ้ายังไม่สว่างดี" },
     { file: "chapter-05.html", title: "ตอนที่ 5: วันที่ประตูไม่มีเสียงเตือน", subtitle: "เช้าวันต่อมา เซ็นยืนอยู่หน้าอาคารสำนักงานใหญ่ JLA ชินจูกุ" },
     { file: "chapter-06.html", title: "ตอนที่ 6: มิติที่ไม่มีแสง", subtitle: "ความมืดกลืนทุกอย่าง" },
-    { file: "chapter-07.html", title: "ตอนที่ 7: ราคาของความอ่อนแอ", subtitle: "เซ็นวิ่ง" }
+    { file: "chapter-07.html", title: "ตอนที่ 7: ราคาของความอ่อนแอ", subtitle: "เซ็นวิ่ง" },
+    { file: "chapter-08.html", title: "ตอนที่ 8: หมากตัวแรก", subtitle: "วันที่ 30 เช้า" },
+    { file: "chapter-09.html", title: "ตอนที่ 9: คนแปลกหน้าจากประตูมิติ", subtitle: "ร้านสะดวกซื้อ FamilyMart สาขาเซตากาย่า" }
   ];
 
   const $ = (sel) => document.querySelector(sel);
