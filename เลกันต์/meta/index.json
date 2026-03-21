@@ -1,0 +1,133 @@
+{
+  "novelWriter.meta": {
+    "version": "0x020802f0",
+    "timestamp": "2026-03-21 16:36:55"
+  },
+  "novelWriter.tagsIndex": {},
+  "novelWriter.itemIndex": {
+    "01ea4c67c79c4": {
+      "T0001": {
+        "meta": {"level": "H2", "title": "Chapter 16", "line": 1, "tag": "", "counts": [10, 2, 0]},
+        "summary": "Summary of the chapter."
+      }
+    },
+    "35beef8c96fbe": {
+      "T0001": {
+        "meta": {"level": "H2", "title": "Chapter 18", "line": 1, "tag": "", "counts": [10, 2, 0]},
+        "summary": "Summary of the chapter."
+      }
+    },
+    "404dc2bf87b55": {
+      "T0001": {
+        "meta": {"level": "H2", "title": "Chapter 7", "line": 1, "tag": "", "counts": [9, 2, 0]},
+        "summary": "Summary of the chapter."
+      }
+    },
+    "4087a2a3eab55": {
+      "T0001": {
+        "meta": {"level": "H2", "title": "Chapter 14", "line": 1, "tag": "", "counts": [10, 2, 0]},
+        "summary": "Summary of the chapter."
+      }
+    },
+    "46d22b96268ba": {
+      "T0001": {
+        "meta": {"level": "H2", "title": "Chapter 12", "line": 1, "tag": "", "counts": [10, 2, 0]},
+        "summary": "Summary of the chapter."
+      }
+    },
+    "4794d9490f815": {
+      "T0001": {
+        "meta": {"level": "H2", "title": "Chapter 20", "line": 1, "tag": "", "counts": [10, 2, 0]},
+        "summary": "Summary of the chapter."
+      }
+    },
+    "54c37068e64b3": {
+      "T0001": {
+        "meta": {"level": "H2", "title": "Chapter 11", "line": 1, "tag": "", "counts": [10, 2, 0]},
+        "summary": "Summary of the chapter."
+      }
+    },
+    "80245605f1fef": {
+      "T0001": {
+        "meta": {"level": "H2", "title": "Chapter 3", "line": 1, "tag": "", "counts": [9, 2, 0]},
+        "summary": "Summary of the chapter."
+      }
+    },
+    "88a4b63e7768e": {
+      "T0001": {
+        "meta": {"level": "H2", "title": "Chapter 10", "line": 1, "tag": "", "counts": [10, 2, 0]},
+        "summary": "Summary of the chapter."
+      }
+    },
+    "926bc5d790f2d": {
+      "T0001": {
+        "meta": {"level": "H2", "title": "Chapter 13", "line": 1, "tag": "", "counts": [10, 2, 0]},
+        "summary": "Summary of the chapter."
+      }
+    },
+    "a9098897ae9da": {
+      "T0001": {
+        "meta": {"level": "H2", "title": "Chapter 5", "line": 1, "tag": "", "counts": [9, 2, 0]},
+        "summary": "Summary of the chapter."
+      }
+    },
+    "bc0177b892b03": {
+      "T0001": {
+        "meta": {"level": "H2", "title": "Chapter 17", "line": 1, "tag": "", "counts": [10, 2, 0]},
+        "summary": "Summary of the chapter."
+      }
+    },
+    "bd8d416b9dfcf": {
+      "T0001": {
+        "meta": {"level": "H2", "title": "Chapter 9", "line": 1, "tag": "", "counts": [9, 2, 0]},
+        "summary": "Summary of the chapter."
+      }
+    },
+    "be10967f0ce70": {
+      "T0001": {
+        "meta": {"level": "H2", "title": "Chapter 6", "line": 1, "tag": "", "counts": [9, 2, 0]},
+        "summary": "Summary of the chapter."
+      }
+    },
+    "cba135313450b": {
+      "T0001": {
+        "meta": {"level": "H1", "title": "\u0e40\u0e25\u0e01\u0e31\u0e19\u0e15\u0e4c", "line": 7, "tag": "", "counts": [37, 6, 2]}
+      }
+    },
+    "ce55c7ceb4a61": {
+      "T0001": {
+        "meta": {"level": "H2", "title": "Chapter 8", "line": 1, "tag": "", "counts": [9, 2, 0]},
+        "summary": "Summary of the chapter."
+      }
+    },
+    "d354eb540ebb1": {
+      "T0000": {
+        "meta": {"level": "H0", "title": "", "line": 0, "tag": "", "counts": [12660, 579, 139]}
+      }
+    },
+    "d5102aa03ca3e": {
+      "T0001": {
+        "meta": {"level": "H2", "title": "Chapter 15", "line": 1, "tag": "", "counts": [10, 2, 0]},
+        "summary": "Summary of the chapter."
+      }
+    },
+    "d943b2330d7d6": {
+      "T0001": {
+        "meta": {"level": "H2", "title": "Chapter 4", "line": 1, "tag": "", "counts": [9, 2, 0]},
+        "summary": "Summary of the chapter."
+      }
+    },
+    "e01814ff2f167": {
+      "T0001": {
+        "meta": {"level": "H2", "title": "Chapter 19", "line": 1, "tag": "", "counts": [10, 2, 0]},
+        "summary": "Summary of the chapter."
+      }
+    },
+    "f0ab2e48d7c8f": {
+      "T0001": {
+        "meta": {"level": "H2", "title": "Chapter 2", "line": 1, "tag": "", "counts": [9, 2, 0]},
+        "summary": "Summary of the chapter."
+      }
+    }
+  }
+}

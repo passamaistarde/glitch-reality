@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='utf-8'?>
+<novelWriterXML appVersion="2.8.2" hexVersion="0x020802f0" fileVersion="1.5" fileRevision="6" timeStamp="2026-03-21 16:46:46">
+  <project id="7004f522-f665-4483-b81a-26bd82d89e70" saveCount="1" autoCount="3" editTime="464">
+    <name>GATE BREAK — เลกันต์</name>
+    <author />
+  </project>
+  <settings>
+    <doBackup>yes</doBackup>
+    <language>th</language>
+    <spellChecking auto="no">None</spellChecking>
+    <lastHandle>
+      <entry key="editor">85cd8946aa2a4</entry>
+      <entry key="viewer">None</entry>
+      <entry key="novel">b61beccefd934</entry>
+      <entry key="outline">None</entry>
+    </lastHandle>
+    <autoReplace />
+    <status>
+      <entry key="s000000" count="20" color="#646464" shape="SQUARE">New</entry>
+      <entry key="s000001" count="0" color="#c83200" shape="SQUARE">Note</entry>
+      <entry key="s000002" count="0" color="#0050dc" shape="SQUARE">Draft</entry>
+      <entry key="s000003" count="0" color="#00b400" shape="SQUARE">Finished</entry>
+    </status>
+    <importance>
+      <entry key="i000000" count="1" color="#646464" shape="SQUARE">New</entry>
+      <entry key="i000001" count="0" color="#0050dc" shape="SQUARE">Minor</entry>
+      <entry key="i000002" count="0" color="#00b400" shape="SQUARE">Major</entry>
+    </importance>
+  </settings>
+  <content items="21" novelWords="14681" notesWords="0" novelChars="232388" notesChars="0">
+    <item handle="b61beccefd934" parent="None" root="b61beccefd934" order="0" type="ROOT" class="NOVEL">
+      <meta expanded="yes" />
+      <name status="s000000" import="i000000">GATE BREAK — เลกันต์</name>
+    </item>
+    <item handle="7b0e5c5d7d424" parent="b61beccefd934" root="b61beccefd934" order="0" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="11549" wordCount="572" paraCount="133" cursorPos="0" />
+      <name status="s000000" import="i000000" active="yes">ตอนที่ 1: วันที่โลกเปลี่ยนไป</name>
+    </item>
+    <item handle="468dfea21a874" parent="b61beccefd934" root="b61beccefd934" order="1" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="13253" wordCount="779" paraCount="211" cursorPos="0" />
+      <name status="s000000" import="i000000" active="yes">ตอนที่ 2: ระบบตื่น</name>
+    </item>
+    <item handle="4fa1824cf42f4" parent="b61beccefd934" root="b61beccefd934" order="2" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="12867" wordCount="914" paraCount="187" cursorPos="0" />
+      <name status="s000000" import="i000000" active="yes">ตอนที่ 3: สามวัน</name>
+    </item>
+    <item handle="c253b1e254a74" parent="b61beccefd934" root="b61beccefd934" order="3" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="15044" wordCount="1023" paraCount="214" cursorPos="0" />
+      <name status="s000000" import="i000000" active="yes">ตอนที่ 4: ดินแดนหมาป่า</name>
+    </item>
+    <item handle="788173e37d5e4" parent="b61beccefd934" root="b61beccefd934" order="4" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="12083" wordCount="709" paraCount="169" cursorPos="0" />
+      <name status="s000000" import="i000000" active="yes">ตอนที่ 5: วันที่ประตูไม่มีเสียงเตือน</name>
+    </item>
+    <item handle="27c684d8ed6d4" parent="b61beccefd934" root="b61beccefd934" order="5" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="14615" wordCount="983" paraCount="202" cursorPos="0" />
+      <name status="s000000" import="i000000" active="yes">ตอนที่ 6: มิติที่ไม่มีแสง</name>
+    </item>
+    <item handle="4cd67dce4e0b4" parent="b61beccefd934" root="b61beccefd934" order="6" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="14767" wordCount="989" paraCount="230" cursorPos="0" />
+      <name status="s000000" import="i000000" active="yes">ตอนที่ 7: ราคาของความอ่อนแอ</name>
+    </item>
+    <item handle="819b064ac8e64" parent="b61beccefd934" root="b61beccefd934" order="7" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="8172" wordCount="663" paraCount="158" cursorPos="0" />
+      <name status="s000000" import="i000000" active="yes">ตอนที่ 8: หมากตัวแรก</name>
+    </item>
+    <item handle="28115a82559b4" parent="b61beccefd934" root="b61beccefd934" order="8" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="9119" wordCount="570" paraCount="120" cursorPos="0" />
+      <name status="s000000" import="i000000" active="yes">ตอนที่ 9: คนแปลกหน้าจากประตูมิติ</name>
+    </item>
+    <item handle="969ff6c163b64" parent="b61beccefd934" root="b61beccefd934" order="9" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="11850" wordCount="832" paraCount="203" cursorPos="0" />
+      <name status="s000000" import="i000000" active="yes">ตอนที่ 10: คำท้า</name>
+    </item>
+    <item handle="4c54e25dee3d4" parent="b61beccefd934" root="b61beccefd934" order="10" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="14654" wordCount="830" paraCount="225" cursorPos="0" />
+      <name status="s000000" import="i000000" active="yes">ตอนที่ 11: เงาที่ไม่ได้เรียก</name>
+    </item>
+    <item handle="1c153bbb95aa4" parent="b61beccefd934" root="b61beccefd934" order="11" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="14478" wordCount="1161" paraCount="252" cursorPos="0" />
+      <name status="s000000" import="i000000" active="yes">ตอนที่ 12: ก้าวเงา</name>
+    </item>
+    <item handle="a09fcf8b68484" parent="b61beccefd934" root="b61beccefd934" order="12" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="16876" wordCount="1024" paraCount="234" cursorPos="0" />
+      <name status="s000000" import="i000000" active="yes">ตอนที่ 13: ค่าที่ไม่ควรมีอยู่จริง</name>
+    </item>
+    <item handle="36c3e7b100244" parent="b61beccefd934" root="b61beccefd934" order="13" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="15626" wordCount="959" paraCount="245" cursorPos="0" />
+      <name status="s000000" import="i000000" active="yes">ตอนที่ 14: คนดังไม่ได้อยากดัง</name>
+    </item>
+    <item handle="7658bf65f46f4" parent="b61beccefd934" root="b61beccefd934" order="14" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="10246" wordCount="880" paraCount="182" cursorPos="0" />
+      <name status="s000000" import="i000000" active="yes">ตอนที่ 15: อัศวินแห่งเงา</name>
+    </item>
+    <item handle="fad7fdb34e494" parent="b61beccefd934" root="b61beccefd934" order="15" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="10356" wordCount="541" paraCount="185" cursorPos="0" />
+      <name status="s000000" import="i000000" active="yes">ตอนที่ 16: ประตูที่ไม่เหมือนข้อมูล</name>
+    </item>
+    <item handle="0bacfdb03c0c4" parent="b61beccefd934" root="b61beccefd934" order="16" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="6736" wordCount="316" paraCount="125" cursorPos="0" />
+      <name status="s000000" import="i000000" active="yes">ตอนที่ 17: น้ำแข็งกับเงา</name>
+    </item>
+    <item handle="3e6644a72d914" parent="b61beccefd934" root="b61beccefd934" order="17" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="8155" wordCount="340" paraCount="150" cursorPos="0" />
+      <name status="s000000" import="i000000" active="yes">ตอนที่ 18: บอสที่ไม่ควรอยู่ที่นี่</name>
+    </item>
+    <item handle="85cd8946aa2a4" parent="b61beccefd934" root="b61beccefd934" order="18" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="11942" wordCount="596" paraCount="186" cursorPos="0" />
+      <name status="s000000" import="i000000" active="yes">ตอนที่ 19: สิ่งที่ยังอยู่</name>
+    </item>
+    <item handle="4d87b4d60ce2b" parent="None" root="4d87b4d60ce2b" order="1" type="ROOT" class="TRASH">
+      <meta expanded="no" />
+      <name status="s000000" import="i000000">Trash</name>
+    </item>
+  </content>
+</novelWriterXML>

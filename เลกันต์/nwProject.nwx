@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='utf-8'?>
+<novelWriterXML appVersion="2.8.2" hexVersion="0x020802f0" fileVersion="1.5" fileRevision="6" timeStamp="2026-03-21 16:36:55">
+  <project id="281c7d39-faed-489f-86ed-b7f49ddb70f5" saveCount="2" autoCount="3" editTime="438">
+    <name>เลกันต์</name>
+    <author />
+  </project>
+  <settings>
+    <doBackup>yes</doBackup>
+    <language>en_US</language>
+    <spellChecking auto="no">None</spellChecking>
+    <lastHandle>
+      <entry key="editor">d354eb540ebb1</entry>
+      <entry key="viewer">None</entry>
+      <entry key="novel">04c1ca73a70b3</entry>
+      <entry key="outline">None</entry>
+    </lastHandle>
+    <autoReplace />
+    <status>
+      <entry key="s97de49" count="23" color="faded" shape="STAR">New</entry>
+      <entry key="s0c7d3c" count="0" color="red" shape="TRIANGLE">Note</entry>
+      <entry key="s8860bb" count="0" color="yellow" shape="CIRCLE_T">Draft</entry>
+      <entry key="s48365b" count="0" color="green" shape="STAR">Finished</entry>
+    </status>
+    <importance>
+      <entry key="i8d5074" count="3" color="purple" shape="SQUARE">New</entry>
+      <entry key="i22cf82" count="0" color="purple" shape="BLOCK_2">Minor</entry>
+      <entry key="if009e9" count="0" color="purple" shape="BLOCK_3">Major</entry>
+      <entry key="i05665d" count="0" color="purple" shape="BLOCK_4">Main</entry>
+    </importance>
+  </settings>
+  <content items="26" novelWords="631" notesWords="0" novelChars="12918" notesChars="0">
+    <item handle="04c1ca73a70b3" parent="None" root="04c1ca73a70b3" order="0" type="ROOT" class="NOVEL">
+      <meta expanded="yes" />
+      <name status="s97de49" import="i8d5074">Novel</name>
+    </item>
+    <item handle="cba135313450b" parent="04c1ca73a70b3" root="04c1ca73a70b3" order="0" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H1" charCount="76" wordCount="14" paraCount="3" cursorPos="0" />
+      <name status="s97de49" import="i8d5074" active="yes">Title Page</name>
+    </item>
+    <item handle="d354eb540ebb1" parent="04c1ca73a70b3" root="04c1ca73a70b3" order="1" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="12660" wordCount="579" paraCount="139" cursorPos="284" />
+      <name status="s97de49" import="i8d5074" active="yes">Chapter 1</name>
+    </item>
+    <item handle="f0ab2e48d7c8f" parent="04c1ca73a70b3" root="04c1ca73a70b3" order="2" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="9" wordCount="2" paraCount="0" cursorPos="0" />
+      <name status="s97de49" import="i8d5074" active="yes">Chapter 2</name>
+    </item>
+    <item handle="80245605f1fef" parent="04c1ca73a70b3" root="04c1ca73a70b3" order="3" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="9" wordCount="2" paraCount="0" cursorPos="0" />
+      <name status="s97de49" import="i8d5074" active="yes">Chapter 3</name>
+    </item>
+    <item handle="d943b2330d7d6" parent="04c1ca73a70b3" root="04c1ca73a70b3" order="4" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="9" wordCount="2" paraCount="0" cursorPos="0" />
+      <name status="s97de49" import="i8d5074" active="yes">Chapter 4</name>
+    </item>
+    <item handle="a9098897ae9da" parent="04c1ca73a70b3" root="04c1ca73a70b3" order="5" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="9" wordCount="2" paraCount="0" cursorPos="0" />
+      <name status="s97de49" import="i8d5074" active="yes">Chapter 5</name>
+    </item>
+    <item handle="be10967f0ce70" parent="04c1ca73a70b3" root="04c1ca73a70b3" order="6" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="9" wordCount="2" paraCount="0" cursorPos="0" />
+      <name status="s97de49" import="i8d5074" active="yes">Chapter 6</name>
+    </item>
+    <item handle="404dc2bf87b55" parent="04c1ca73a70b3" root="04c1ca73a70b3" order="7" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="9" wordCount="2" paraCount="0" cursorPos="0" />
+      <name status="s97de49" import="i8d5074" active="yes">Chapter 7</name>
+    </item>
+    <item handle="ce55c7ceb4a61" parent="04c1ca73a70b3" root="04c1ca73a70b3" order="8" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="9" wordCount="2" paraCount="0" cursorPos="0" />
+      <name status="s97de49" import="i8d5074" active="yes">Chapter 8</name>
+    </item>
+    <item handle="bd8d416b9dfcf" parent="04c1ca73a70b3" root="04c1ca73a70b3" order="9" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="9" wordCount="2" paraCount="0" cursorPos="0" />
+      <name status="s97de49" import="i8d5074" active="yes">Chapter 9</name>
+    </item>
+    <item handle="88a4b63e7768e" parent="04c1ca73a70b3" root="04c1ca73a70b3" order="10" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="10" wordCount="2" paraCount="0" cursorPos="0" />
+      <name status="s97de49" import="i8d5074" active="yes">Chapter 10</name>
+    </item>
+    <item handle="54c37068e64b3" parent="04c1ca73a70b3" root="04c1ca73a70b3" order="11" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="10" wordCount="2" paraCount="0" cursorPos="0" />
+      <name status="s97de49" import="i8d5074" active="yes">Chapter 11</name>
+    </item>
+    <item handle="46d22b96268ba" parent="04c1ca73a70b3" root="04c1ca73a70b3" order="12" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="10" wordCount="2" paraCount="0" cursorPos="0" />
+      <name status="s97de49" import="i8d5074" active="yes">Chapter 12</name>
+    </item>
+    <item handle="926bc5d790f2d" parent="04c1ca73a70b3" root="04c1ca73a70b3" order="13" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="10" wordCount="2" paraCount="0" cursorPos="0" />
+      <name status="s97de49" import="i8d5074" active="yes">Chapter 13</name>
+    </item>
+    <item handle="4087a2a3eab55" parent="04c1ca73a70b3" root="04c1ca73a70b3" order="14" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="10" wordCount="2" paraCount="0" cursorPos="0" />
+      <name status="s97de49" import="i8d5074" active="yes">Chapter 14</name>
+    </item>
+    <item handle="d5102aa03ca3e" parent="04c1ca73a70b3" root="04c1ca73a70b3" order="15" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="10" wordCount="2" paraCount="0" cursorPos="0" />
+      <name status="s97de49" import="i8d5074" active="yes">Chapter 15</name>
+    </item>
+    <item handle="01ea4c67c79c4" parent="04c1ca73a70b3" root="04c1ca73a70b3" order="16" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="10" wordCount="2" paraCount="0" cursorPos="0" />
+      <name status="s97de49" import="i8d5074" active="yes">Chapter 16</name>
+    </item>
+    <item handle="bc0177b892b03" parent="04c1ca73a70b3" root="04c1ca73a70b3" order="17" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="10" wordCount="2" paraCount="0" cursorPos="0" />
+      <name status="s97de49" import="i8d5074" active="yes">Chapter 17</name>
+    </item>
+    <item handle="35beef8c96fbe" parent="04c1ca73a70b3" root="04c1ca73a70b3" order="18" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="10" wordCount="2" paraCount="0" cursorPos="0" />
+      <name status="s97de49" import="i8d5074" active="yes">Chapter 18</name>
+    </item>
+    <item handle="e01814ff2f167" parent="04c1ca73a70b3" root="04c1ca73a70b3" order="19" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="10" wordCount="2" paraCount="0" cursorPos="0" />
+      <name status="s97de49" import="i8d5074" active="yes">Chapter 19</name>
+    </item>
+    <item handle="4794d9490f815" parent="04c1ca73a70b3" root="04c1ca73a70b3" order="20" type="FILE" class="NOVEL" layout="DOCUMENT">
+      <meta expanded="no" heading="H2" charCount="10" wordCount="2" paraCount="0" cursorPos="0" />
+      <name status="s97de49" import="i8d5074" active="yes">Chapter 20</name>
+    </item>
+    <item handle="c8e01c46fbe06" parent="None" root="c8e01c46fbe06" order="1" type="ROOT" class="PLOT">
+      <meta expanded="no" />
+      <name status="s97de49" import="i8d5074">Plot</name>
+    </item>
+    <item handle="578d70db1adec" parent="None" root="578d70db1adec" order="2" type="ROOT" class="CHARACTER">
+      <meta expanded="no" />
+      <name status="s97de49" import="i8d5074">Characters</name>
+    </item>
+    <item handle="a3e2561a46d77" parent="None" root="a3e2561a46d77" order="3" type="ROOT" class="ARCHIVE">
+      <meta expanded="no" />
+      <name status="s97de49" import="i8d5074">Archive</name>
+    </item>
+    <item handle="16a93a175cb39" parent="None" root="16a93a175cb39" order="4" type="ROOT" class="TRASH">
+      <meta expanded="no" />
+      <name status="s97de49" import="i8d5074">Trash</name>
+    </item>
+  </content>
+</novelWriterXML>

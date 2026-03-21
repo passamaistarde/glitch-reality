@@ -1,0 +1,50 @@
+{
+  "novelWriter.guiOptions": {
+    "GuiNovelDetails": {
+      "winWidth": 650,
+      "winHeight": 500,
+      "novelRoot": "b61beccefd934",
+      "widthCol0": 200,
+      "widthCol1": 60,
+      "widthCol2": 60,
+      "widthCol3": 60,
+      "widthCol4": 90,
+      "wordsPerPage": 350,
+      "countFrom": 1,
+      "clearDouble": true
+    },
+    "GuiManuscript": {
+      "winWidth": 900,
+      "winHeight": 600,
+      "optsWidth": 225,
+      "viewWidth": 649,
+      "listHeight": 201,
+      "detailsHeight": 290,
+      "detailsWidth": 100,
+      "detailsExpanded": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "showNewPage": true
+    },
+    "GuiWritingStats": {
+      "winWidth": 550,
+      "winHeight": 500,
+      "widthCol0": 180,
+      "widthCol1": 80,
+      "widthCol2": 80,
+      "widthCol3": 80,
+      "sortCol": 0,
+      "sortOrder": "DescendingOrder",
+      "incNovel": true,
+      "incNotes": true,
+      "hideZeros": true,
+      "hideNegative": false,
+      "groupByDay": false,
+      "showIdleTime": false,
+      "histMax": 2000
+    }
+  }
+}
